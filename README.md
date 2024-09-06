@@ -1,3 +1,5 @@
+This is a partial clone of website https://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#home with minimal animations
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
