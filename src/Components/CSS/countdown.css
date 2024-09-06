@@ -19,16 +19,20 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity */
-  /* rgba(0, 0, 0, 0.5) adds a black overlay with 50% opacity */
-  z-index: 1; /* Ensure the overlay is above the background image */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .content {
   width: 100%;
-  position: relative; /* Position relative to place content above the overlay */
-  z-index: 2; /* Ensure content is above the overlay */
-  color: white; /* Ensure text is readable over the darkened background */
+  position: relative;
+  z-index: 2;
+  color: white;
+  position: relative;
+  z-index: 2;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -36,6 +40,7 @@
   text-align: left;
   margin: 0 5rem;
 }
+
 .countdown-container {
   width: 55%;
   display: flex;
@@ -65,6 +70,7 @@
   font-size: 2rem;
   margin: 0;
 }
+
 .box {
   font-family: var(--font_sub);
   width: 150px;
@@ -77,6 +83,7 @@
   font-weight: 200;
   color: var(--color_1);
 }
+
 .box > span {
   font-size: 2.8rem;
   font-weight: 800;

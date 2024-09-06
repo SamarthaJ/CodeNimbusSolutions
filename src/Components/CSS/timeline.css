@@ -83,7 +83,6 @@
   color: white;
 }
 
-/* Aligns text based on the side of the event */
 .timeline-item.left .timeline-content {
   text-align: right;
   align-items: flex-end;

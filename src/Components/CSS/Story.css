@@ -52,7 +52,6 @@
   width: 400px;
   height: 300px;
   overflow: hidden;
-  /* margin-top: 50px; */
   display: grid;
   grid-template-columns: 0.1fr 1fr;
 }

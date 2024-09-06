@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./CSS/countdown.css";
 
 const Countdown = () => {
-  // Define state variables for days, hours, minutes, and seconds
   const [time, setTime] = useState({
     days: 0,
     hours: 0,
@@ -11,18 +10,13 @@ const Countdown = () => {
   });
 
   useEffect(() => {
-    // Set the countdown date
-    const countDownDate = new Date("Jan 5, 2030 15:37:25").getTime();
+    const countDownDate = new Date("Dec 25, 2025 15:37:25").getTime();
 
-    // Update the countdown every 1 second
     const interval = setInterval(() => {
-      // Get the current time
       const now = new Date().getTime();
 
-      // Calculate the distance between now and the countdown date
       const distance = countDownDate - now;
 
-      // Time calculations for days, hours, minutes, and seconds
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
@@ -30,10 +24,8 @@ const Countdown = () => {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Update state with the new values
       setTime({ days, hours, minutes, seconds });
 
-      // If the countdown is over, clear the interval
       if (distance < 0) {
         clearInterval(interval);
         setTime({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -41,7 +33,6 @@ const Countdown = () => {
       }
     }, 1000);
 
-    // Cleanup the interval on component unmount
     return () => clearInterval(interval);
   }, []);
 

@@ -1,6 +1,5 @@
 import React from "react";
 import Time from "./time";
-// import "./assets/story/img_1.jpg";
 import img_1 from "../assets/story/img-1.jpg";
 import img_2 from "../assets/story/img-2.jpg";
 import img_3 from "../assets/story/img-3.jpg";

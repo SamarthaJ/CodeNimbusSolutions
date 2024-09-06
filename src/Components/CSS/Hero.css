@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap");
 
-/* CSS custom variables for font-family */
 :root {
   --font_head: "Great Vibes", cursive;
   --font_sub: "Dosis", sans-serif;
@@ -12,7 +11,7 @@ h1 {
   font-family: var(--font_head);
   font-size: 6rem;
   display: block;
-  margin: 0 0 10px 0; /* Simplified margin */
+  margin: 0 0 10px 0;
   font-weight: 200;
   unicode-bidi: isolate;
   color: #fff;
@@ -43,50 +42,48 @@ h3 {
 
 .hero-container {
   position: relative;
-  height: 95vh; /* Set height of the container */
+  height: 95vh;
   overflow: hidden;
 }
 
 .hero-slide {
-  position: absolute; /* Position the hero slide absolutely within the container */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  width: 100%; /* Take full width */
-  height: 100%; /* Take full height of the parent */
-  display: flex; /* Use flexbox for easy alignment */
-  flex-direction: column; /* Align items vertically */
-  justify-content: center; /* Center the .content vertically */
-  align-items: center; /* Center the .content horizontally */
-  z-index: 10; /* Ensure it is on top of the carousel */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
   text-align: center;
   padding: 20px;
-  border-radius: 10px; /* Optional: Add rounded corners */
+  border-radius: 10px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-/* Centering .content in the middle */
 .hero-slide .content {
-  flex: 1; /* Take up available space to be centered */
-  display: flex; /* Use flexbox to center content */
-  flex-direction: column; /* Arrange children vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Positioning .Dates at the bottom */
 .hero-slide .Dates {
   position: absolute;
-  bottom: 5vh; /* Adjust as needed */
+  bottom: 5vh;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
   font-family: var(--font_sub);
   color: aliceblue;
-  display: flex; /* Use Flexbox */
-  flex-direction: column; /* Align items vertically */
-  justify-content: flex-start; /* Align items at the top */
-  align-items: center; /* Center horizontally */
-  padding-top: 20px; /* Add padding to create space at the top if needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .Dates::before {
@@ -94,12 +91,12 @@ h3 {
   width: 350px;
   height: 350px;
   background-color: rgba(94, 154, 142, 0.3);
-  border-radius: 50%; /* Add rounded corners for circular effect */
+  border-radius: 50%;
   position: absolute;
-  top: 0; /* Position at the top */
+  top: 0;
   transform: translateX(-50%);
   animation: pulse 1s ease-in-out infinite;
-  z-index: -1; /* Position behind the text */
+  z-index: -1;
 }
 
 .Dates::after {
@@ -108,11 +105,11 @@ h3 {
   height: 350px;
   background-color: var(--color_1);
   position: absolute;
-  top: 0; /* Position at the top */
+  top: 0;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
-  z-index: -2; /* Position behind the ::before */
+  z-index: -2;
   opacity: 0.5;
 }
 
@@ -137,12 +134,11 @@ h3 {
 
 .carousel-slide img {
   width: 100%;
-  height: 95vh; /* Matches the height of hero-container */
-  object-fit: cover; /* Ensure the image covers the slide area */
+  height: 95vh;
+  object-fit: cover;
   filter: brightness(70%);
 }
 
-/* CSS for Custom Arrows */
 .next-arrow,
 .prev-arrow {
   font-size: 24px;
@@ -153,7 +149,7 @@ h3 {
   transform: translateY(-50%);
   z-index: 1000;
   opacity: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition for smooth fade */
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .next-arrow {
@@ -184,7 +180,6 @@ h3 {
   border: var(--color_1) 6px solid;
 }
 
-/* Hover effect to display arrows with animation */
 html:hover .next-arrow {
   opacity: 1;
   transform: translateX(0);
@@ -197,31 +192,28 @@ html:hover .prev-arrow {
   animation: arrowFadeTranslate 0.5s ease-in-out forwards;
 }
 
-/* Keyframe animation for the left arrow */
 @keyframes arrowFadeTranslate {
   0% {
     opacity: 0;
-    transform: translateX(-20px); /* Starts off-screen for left arrow */
+    transform: translateX(-20px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0); /* Moves to original position */
+    transform: translateX(0);
   }
 }
 
-/* Keyframe animation for the right arrow */
 @keyframes arrowFadeTranslateRight {
   0% {
     opacity: 0;
-    transform: translateX(20px); /* Starts off-screen for right arrow */
+    transform: translateX(20px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0); /* Moves to original position */
+    transform: translateX(0);
   }
 }
 
-/* Keyframe animation for pulse effect */
 @keyframes pulse {
   0% {
     transform: scale3d(1.1, 1.1, 1.1);

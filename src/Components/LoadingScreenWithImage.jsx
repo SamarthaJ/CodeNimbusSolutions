@@ -1,6 +1,6 @@
 import React from "react";
 import "./CSS/LoadingScreenWithImage.css";
-import loadingImage from "../assets/Loding-image.png"; // Replace with your actual image path
+import loadingImage from "../assets/Loding-image.png"; 
 
 const LoadingScreenWithImage = () => {
   return (

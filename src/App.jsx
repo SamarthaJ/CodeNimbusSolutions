@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"; // Import useState and useEf
 import Hero from "./Components/Hero";
 import Nav from "./Components/Nav";
 import Couple from "./Components/Couple";
-import Countdown from "./Components/Countdown";
+import Countdown from "./Components/countdown";
 import Separator from "./Components/Separator";
 import Wedding from "./Components/Wedding";
 import Timeline from "./Components/Timeline";

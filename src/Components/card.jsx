@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaPinterest, FaVine } from "react-icons/fa"; // Importing icons from react-icons
+import { FaFacebook, FaTwitter, FaPinterest, FaVine } from "react-icons/fa";
 
 const Card = ({ type }) => {
   const groomsmenContent = [
@@ -44,7 +44,6 @@ const Card = ({ type }) => {
     },
   ];
 
-  // Choose content based on the type prop
   const content = type === "groomsmen" ? groomsmenContent : bridesmaidContent;
 
   return (
@@ -56,7 +55,6 @@ const Card = ({ type }) => {
             alt={`${person.name}`}
             className="card-image"
           />{" "}
-          {/* Displaying the image */}
           <h3>{person.name}</h3>
           <p>{person.role}</p>
           <div className="social-icons">

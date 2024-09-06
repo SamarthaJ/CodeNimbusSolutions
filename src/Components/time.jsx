@@ -39,7 +39,6 @@ const Timeline = ({ events }) => {
                     </>
                   ))}
                 </Slider>
-                {/* <img src={event.image} alt={event.text.title} /> */}
               </div>
             </>
           ) : (
@@ -56,7 +55,6 @@ const Timeline = ({ events }) => {
                     </>
                   ))}
                 </Slider>
-                {/* <img src={event.image} alt={event.text.title} /> */}
               </div>
               <div className="timeline-pillar"></div>
               <div className="timeline-content">

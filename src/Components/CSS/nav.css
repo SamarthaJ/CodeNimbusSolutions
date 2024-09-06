@@ -1,4 +1,3 @@
-/* Nav.css */
 :root {
   --font_head: "Great Vibes", cursive;
   --font_sub: "Dosis", sans-serif;
@@ -38,7 +37,7 @@
 .logo i {
   font-size: 30px;
   margin: 0 5px;
-  color: #5e9a8e; /* Example color for the heart icon */
+  color: #5e9a8e;
 }
 
 .nav {
