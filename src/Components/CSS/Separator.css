@@ -1,0 +1,43 @@
+.separator {
+  background-image: url("../../assets/cta-bg.jpg");
+  background-size: cover;
+  height: 40vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.separator::before {
+  content: "";
+  height: 40vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity */
+  /* rgba(0, 0, 0, 0.5) adds a black overlay with 50% opacity */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+.text-center_separator {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 6rem;
+  color: #fff;
+  font-weight: 200;
+  text-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.5);
+  font-family: var(--font_head);
+}
+
+.text-center_separator > span {
+  font-family: var(--font_sub);
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0;
+}

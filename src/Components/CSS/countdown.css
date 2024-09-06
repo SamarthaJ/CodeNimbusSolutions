@@ -1,0 +1,83 @@
+.countdown {
+  background-image: url("../../assets/countdown-bg.jpg");
+  background-size: cover;
+  height: 50vh;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.countdown::before {
+  content: "";
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity */
+  /* rgba(0, 0, 0, 0.5) adds a black overlay with 50% opacity */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.content {
+  width: 100%;
+  position: relative; /* Position relative to place content above the overlay */
+  z-index: 2; /* Ensure content is above the overlay */
+  color: white; /* Ensure text is readable over the darkened background */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: left;
+  margin: 0 5rem;
+}
+.countdown-container {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.text-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 200;
+  text-shadow: 0px 1px 1px 0 rgba(0, 0, 0, 0.5);
+  font-family: var(--font_head);
+}
+
+.text-center > span {
+  font-size: 2rem;
+  margin: 0;
+}
+.box {
+  font-family: var(--font_sub);
+  width: 150px;
+  height: fit-content;
+  padding: 20px 20px;
+  background-color: rgb(233, 233, 232);
+  border: rgb(143, 143, 143) 5px solid;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--color_1);
+}
+.box > span {
+  font-size: 2.8rem;
+  font-weight: 800;
+}

@@ -1,0 +1,113 @@
+@import "@flaticon/flaticon-uicons/css/all/all";
+.story {
+  margin: 100px 0 0 0;
+  font-family: var(--font_head);
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.story > span {
+  margin: 0 0 0 0;
+  background: rgb(239, 245, 243);
+  padding: 10px 20px 10px 20px;
+  border-top: rgb(200, 208, 205) 2px solid;
+  border-bottom: rgb(200, 208, 205) 2px solid;
+  color: rgb(132, 131, 131);
+}
+
+.my-story-des {
+  width: 100%;
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 0;
+}
+
+.my-story {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 0.5fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.fa-solid {
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  background-color: #82d8c7;
+  border-radius: 50%;
+  border: #5e9a8e 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-story-img {
+  background-color: rgb(255, 255, 255);
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  /* margin-top: 50px; */
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+}
+.my-story-info {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  height: inherit;
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 500px;
+  padding: 10px 0 0 0;
+  text-align: right;
+}
+.my-story-info_1 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  height: inherit;
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 500px;
+  padding: 10px 0 0 0;
+  text-align: left;
+}
+.my-story-info_2 {
+  font-family: var(--font_sub);
+  padding: 100px 10px 0 10px;
+}
+.my-story-info_3 {
+  font-family: var(--font_sub);
+  padding: 50px 10px 0 10px;
+}
+.my-story-info_2 > h2 {
+  color: var(--color_1);
+}
+.my-story-info_2 > span {
+  font-weight: bold;
+}
+.my-story-info_2 > p {
+  font-size: 1.2rem;
+  color: rgb(106, 106, 106);
+}
+.my-story-info_3 > h2 {
+  color: var(--color_1);
+}
+.my-story-info_3 > span {
+  font-weight: bold;
+}
+.my-story-info_3 > p {
+  font-size: 1.2rem;
+  color: rgb(106, 106, 106);
+}
+.flex-center {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}

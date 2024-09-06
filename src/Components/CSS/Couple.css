@@ -1,0 +1,87 @@
+:root {
+  --font_head: "Great Vibes", cursive;
+  --font_sub: "Dosis", sans-serif;
+  --color_1_2: rgba(94, 154, 142, 0.1);
+}
+.couple-container {
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.couple {
+  height: fitr-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  overflow: hidden;
+  align-self: center;
+}
+
+.couples {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.couple-details {
+  background-color: rgb(239, 245, 243);
+  width: 28.11%;
+  padding: 0 2rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  text-align: left;
+  height: inherit;
+}
+
+.couple-name {
+  font-family: var(--font_sub);
+  font-size: 2.5rem;
+  color: #3d3d3d;
+  margin: 0;
+  padding: 50px 0 0 0;
+}
+
+.couple-description {
+  font-family: var(--font_sub);
+  font-size: 1.3rem;
+  color: #565656;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+.couple-sign {
+  font-family: var(--font_head);
+  font-size: 2.5rem;
+  color: #3d3d3d;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+.social-icons {
+  height: fit-content;
+  width: 50%;
+  margin: 0;
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.couple-details_bride{
+  background-color: rgb(239, 245, 243);
+  width: 28.11%;
+  padding: 0 2rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: end;
+  text-align: right;
+  height: inherit;
+}
